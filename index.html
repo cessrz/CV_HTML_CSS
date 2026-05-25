@@ -3,52 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
+    <title>Cesar Ruiz | Portafolio & CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- Barra de Navegación -->
     <header>
         <div class="container">
-            <h1>Mi Sitio Web</h1>
+            <h1 class="logo">CR<span>.</span></h1>
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Sección Principal / Presentación -->
+    <section id="perfil" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h2>Hola, soy Cesar Ruiz</h2>
+                <p class="subtitle">Diseñador 3D y Multimedia</p>
+                <p class="description">
+                    Especializado en modelado, texturado y desarrollo multimedia interactivo. Apasionado por la creación de entornos digitales, flujos de trabajo procedimentales y la integración de tecnologías para proyectos de alto impacto visual.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn">Contáctame</a>
+                    <a href="#" class="btn btn-alt">Descargar CV (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades Técnicas -->
+    <section id="habilidades" class="skills">
         <div class="container">
-            <h2>Bienvenido a mi espacio digital</h2>
-            <p>Esta es una plantilla base construida con HTML y CSS lista para personalizar.</p>
-            <a href="#" class="btn">Saber más</a>
+            <h3 class="section-title">Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Software 3D & Motor Gráfico</h4>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Substance Painter</li>
+                        <li>Touch Designer</li>
+                </div>
+                <div class="skill-category">
+                    <h4>Diseño & Visualización</h4>
+                    <ul>
+                        <li>Diseño de Personajes</li>
+                        <li>Diseño de Entornos</li>
+                        <li>Texturizado PBR</li>
+                        <li>Optimización para Tiempo Real</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Postproducción & Multimedia</h4>
+                    <ul>
+                        <li>After Effects</li>
+                        <li>Capcut</li>
+                        <li>Edición de Video</li>
+                        <li>Diseño de Interfaces</li>
+                        
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Desarrollo & Hardware</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Entornos IoT & Microcontroladores</li>
+                        <li>Integración de Tecnología</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="features">
-        <div class="container grids">
-            <div class="card">
-                <h3>Diseño Limpio</h3>
-                <p>Estructura básica organizada mediante secciones semánticas de HTML5.</p>
-            </div>
-            <div class="card">
-                <h3>Estilos CSS</h3>
-                <p>Colores, tipografías y alineación fluida usando CSS moderno.</p>
-            </div>
-            <div class="card">
-                <h3>Código Listo</h3>
-                <p>Perfecto para abrir en Visual Studio Code y empezar a editar de inmediato.</p>
+    <!-- Sección de Proyectos destacados -->
+    <section id="proyectos" class="portfolio">
+        <div class="container">
+            <h3 class="section-title">Proyectos Destacados</h3>
+            <div class="portfolio-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Visualez Interactivos para DJMARIO</h3>
+                        <p>Diseño y desarrollo de visualizaciones interactivas para evento musical.</p>
+                        <span class="tag">Blender</span> <span class="tag">Substance</span>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Gestion de Redes Sociales Para Clinica Privada CESAT</h3>
+                        <p>Gestión y creación de contenido para las redes sociales de la clínica privada.</p>
+                        <span class="tag">Multimedia</span> <span class="tag">After Effects</span>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Gestion de Redes Sociales Para Imprenta URBAN CARMEN</h3>
+                        <p>Gestión y creación de contenido para las redes sociales de la imprenta.</p>
+                        <span class="tag">Multimedia</span> <span class="tag">After Effects</span>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Video Musical para FYXZ</h3>
+                        <p>Creación de video musical para el artista FYXZ.</p>
+                        <span class="tag">Multimedia</span> <span class="tag">After Effects</span>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Video Musical para JC PRODUCTION</h3>
+                        <p>Creación de video musical para el artista JCPRODUCTION.</p>
+                        <span class="tag">Multimedia</span> <span class="tag">After Effects</span>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Proyectos de Integración IoT</h3>
+                        <p>Sistema de Gestión Hídrica Remota y Autónoma con Enclavamiento de Seguridad (Tinako ESP8266) .</p>
+                        <span class="tag">Electrónica</span> <span class="tag">Desarrollo</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h3 class="section-title">¿Hablamos?</h3>
+            <p>Estoy disponible para proyectos freelance, colaboraciones o posiciones de tiempo completo.</p>
+            <div class="contact-links">
+                <a href="mailto:cesarrz1002@gmail.com" class="contact-btn">✉️ cesarrz1002@gmail.com</a>
+                <a href="https://github.com" target="_blank" class="contact-btn">🐙 Mi GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Cesar Ruiz. Creado con HTML y CSS.</p>
         </div>
     </footer>
 

@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; /* Hace que el salto entre secciones sea suave */
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #e0e0e0;
-    background-color: #0f111a; /* Fondo oscuro moderno */
+    background-color: #0f111a;
 }
 
 .container {
@@ -19,9 +19,10 @@ body {
     margin: 0 auto;
 }
 
-/* Encabezado e Identidad */
+/* Encabezado fijo con desenfoque moderno */
 header {
-    background-color: rgba(15, 17, 26, 0.95);
+    background-color: rgba(15, 17, 26, 0.9);
+    backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -42,7 +43,7 @@ header .container {
 }
 
 .logo span {
-    color: #00e5ff; /* Detalle en cyan neón */
+    color: #00e5ff;
 }
 
 header nav ul {
@@ -62,20 +63,20 @@ header nav a:hover {
     color: #00e5ff;
 }
 
-/* Sección de Presentación (Hero) */
+/* Hero Section */
 .hero {
-    padding: 100px 0;
-    background: radial-gradient(circle at top right, #161b33 0%, #0f111a 60%);
+    padding: 120px 0;
+    background: radial-gradient(circle at top right, #161b33 0%, #0f111a 65%);
 }
 
 .hero-text h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: #fff;
     margin-bottom: 5px;
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #00e5ff;
     font-weight: 600;
     margin-bottom: 20px;
@@ -84,11 +85,10 @@ header nav a:hover {
 .description {
     font-size: 1.1rem;
     color: #a0a5c0;
-    max-width: 700px;
+    max-width: 720px;
     margin-bottom: 35px;
 }
 
-/* Botones */
 .hero-buttons {
     display: flex;
     gap: 15px;
@@ -108,6 +108,7 @@ header nav a:hover {
 .btn:hover {
     background-color: #00b3cc;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
 }
 
 .btn-alt {
@@ -118,26 +119,33 @@ header nav a:hover {
 
 .btn-alt:hover {
     background-color: rgba(0, 229, 255, 0.1);
-    color: #00e5ff;
 }
 
-/* Títulos de Sección Uniformes */
+/* Títulos Globales de Secciones */
 .section-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #fff;
     text-align: center;
-    margin-bottom: 40px;
-    position: relative;
+    margin-bottom: 50px;
 }
 
 .section-title::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 60px;
     height: 4px;
     background-color: #00e5ff;
-    margin: 10px auto 0 auto;
+    margin: 12px auto 0 auto;
     border-radius: 2px;
+}
+
+/* Estilo para los Subtítulos de las Categorías en Proyectos */
+.category-subtitle {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 40px 0 20px 0;
+    border-bottom: 1px dashed #22283d;
+    padding-bottom: 8px;
 }
 
 /* Sección Habilidades */
@@ -148,13 +156,13 @@ header nav a:hover {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
 }
 
 .skill-category {
     background-color: #1c2135;
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
     border-left: 4px solid #00e5ff;
 }
@@ -162,7 +170,7 @@ header nav a:hover {
 .skill-category h4 {
     color: #fff;
     margin-bottom: 15px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 .skill-category ul {
@@ -183,28 +191,29 @@ header nav a:hover {
     color: #00e5ff;
 }
 
-/* Sección Portafolio (Tarjetas de Proyectos) */
+/* Sección Portafolio (Grids adaptables) */
 .portfolio {
     padding: 80px 0;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 20px;
 }
 
 .project-card {
     background-color: #141824;
     border: 1px solid #22283d;
     border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     border-color: #00e5ff;
+    box-shadow: 0 4px 20px rgba(0, 229, 255, 0.05);
 }
 
 .project-info {
@@ -213,6 +222,7 @@ header nav a:hover {
 
 .project-info h3 {
     color: #fff;
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
@@ -222,6 +232,7 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
+/* Etiquetas de Tecnologías (Tags) */
 .tag {
     display: inline-block;
     background-color: #1c2135;
@@ -229,8 +240,9 @@ header nav a:hover {
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.8rem;
-    margin-right: 5px;
+    margin-right: 6px;
     font-weight: 500;
+    border: 1px solid rgba(0, 229, 255, 0.1);
 }
 
 /* Sección Contacto */
@@ -265,9 +277,10 @@ header nav a:hover {
 .contact-btn:hover {
     border-color: #00e5ff;
     color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
 }
 
-/* Pie de Página */
+/* Footer */
 footer {
     background-color: #0f111a;
     text-align: center;

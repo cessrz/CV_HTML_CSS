@@ -73,7 +73,7 @@ header nav a:hover {
 /* Hero Section */
 .hero {
     padding: 50px 0;
-    background: radial-gradient(circle at top right, #161b33 0%, rgba(223, 223, 223, 0.9) 65%);
+    background: radial-gradient(circle at top right, #48c188 0%, rgba(223, 223, 223, 0.9) 65%);
 }
 .hero-grid {
     display: grid;

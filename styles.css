@@ -558,3 +558,28 @@ footer {
   opacity: 0;            /* Se vuelve completamente transparente */
   visibility: hidden;    /* Se "apaga" para que el usuario pueda dar clics al fondo */
 }
+/* Esto asegura que el icono y el texto estén perfectamente alineados al centro */
+
+/* Si usas la Opción 1 (Librería de fuentes), puedes cambiar el tamaño del icono con font-size */
+.bi-instagram {
+    /* Espacio entre el icono y el texto */
+    color: #48c188;
+  font-size: 2rem; 
+  margin-left: 15px; /* Ajusta el espacio entre el icono y el texto */
+}
+.bi-facebook {
+    color: #48c188; /* Azul característico de Facebook */
+  font-size: 2rem; 
+  margin-left: 15px; /* Ajusta el espacio entre el icono y el texto */
+}
+/* Si usas la Opción 2 (SVG directo), el icono hereda automáticamente el color del texto gracias a fill="currentColor" */
+svg.bi-instagram {
+  width: 18px;
+  height: 18px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
